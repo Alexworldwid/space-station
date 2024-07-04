@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-      <section className="grid grid-cols-1 lg:grid-cols-2 w-full lg:px-40 md:mx-10 md:self-center bg-blue">
-        <div className="text-white text-center lg:text-left self-end lg:self-center">
+      <section className="flex flex-col items-center justify-center lg:grid lg:grid-cols-2 w-full h-[900px] lg:px-40 md:mx-10">
+        <div className="text-white text-center lg:text-left lg:self-center">
           <h1 className="text-[#D0D6F9] my-5 md:text-xl lg:text-[28px]">SO, YOU WANT TO TRAVEL TO <br /><br /> <span className={`${bellefair.className} text-white font-light text-7xl md:text-8xl lg:text-[144px]`}>SPACE</span></h1>
           <div className="flex items-center justify-center lg:justify-start">
             <p className="text-[#D0D6F9] md:max-w-md max-w-[300px] text-center lg:text-left text-[15px] md:text-lg lg:text-xl ">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>

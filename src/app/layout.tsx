@@ -49,7 +49,7 @@ export default function RootLayout({
         <Navigation />
         <AnimatePresence mode="wait">
           <motion.main
-            className="flex w-full h-screen"
+            className="flex w-full h-auto"
             key={pathName}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
