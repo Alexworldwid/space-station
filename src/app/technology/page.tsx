@@ -6,6 +6,10 @@ import { TechnologyType } from '../utils/types';
 import technologyData from '../../../public/db/technology.json';
 import TechnologyItem from '../components/shared/technology/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Bellefair } from "next/font/google";
+
+
+const bellefair = Bellefair({weight: ["400"], subsets: ["hebrew"]})
 
 
 const Technology = () => {
@@ -45,15 +49,15 @@ const Technology = () => {
                     
                     <AnimatePresence mode='wait'>
                         <motion.div className='text-white'
-                        key={selectedTechnology.images.landscape}
+                        key={selectedTechnology.description}
                         initial={{ opacity: 0 }}   
                         animate={{ opacity: 1 }} 
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.5 }} 
                         >
-                            <p className=' text-[32px] text-opacity-65 text-white text-center lg:text-left'>THE TERMINOLOGY...</p>
-                            <h2 className='text-[56px] mb-2 text-center lg:text-left'>{selectedTechnology.name}</h2>
-                            <p className='text-[18px] text-[#D0D6F9] max-w-[600px] text-center lg:text-left px-10 lg:px-0'>{selectedTechnology.description}</p>
+                            <p className={` text-[18px] md:text-[32px]  text-opacity-65 text-white text-center lg:text-left mt-6 ${bellefair.className}`}>THE TERMINOLOGY...</p>
+                            <h2 className={` text-[24px] md:text-[56px] mb-2 text-center lg:text-left ${bellefair.className}`}>{selectedTechnology.name}</h2>
+                            <p className='text-[15px] md:text-[18px] text-[#D0D6F9] max-w-[600px] text-center lg:text-left px-10 lg:px-0'>{selectedTechnology.description}</p>
                         </motion.div>
                     </AnimatePresence>
                 </div>
