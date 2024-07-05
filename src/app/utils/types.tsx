@@ -18,4 +18,14 @@ export type CrewType = {
   };
   role: string;
   bio: string;
+};
+
+export type TechnologyType = {
+  id: number;
+  name: string;
+  images: {
+    portrait: string;
+    landscape: string;
+  };
+  description: string
 }

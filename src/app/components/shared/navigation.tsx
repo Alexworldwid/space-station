@@ -67,11 +67,11 @@ const Navigation = () => {
                 <AnimatePresence mode="wait">
                 {
                     openAndCloseMenu && (
-                        <motion.ul  className='backdrop-blur-md md:hidden inset-0 z-50 bg-white bg-opacity-10 fixed left-[35%] pl-10 pt-6'
+                        <motion.ul  className='backdrop-blur-md md:hidden inset-0 z-50 bg-white bg-opacity-10 fixed left-[40%] pl-10 pt-6'
                         style={{
                             WebkitBackdropFilter: 'blur(10px)', // Safari and older mobile browsers
                             backdropFilter: 'blur(10px)', // General support
-                          }}
+                        }}
                         ref={menuRef}
                         initial={{ x: '100%' }}   
                         animate={{ x: '0%' }} 
